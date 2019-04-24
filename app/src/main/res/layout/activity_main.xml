@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.dhht.canvas.ObservableScrollView
+        android:id="@+id/scView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/tvTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt" />
+
+    </com.dhht.canvas.ObservableScrollView>
+
+
+    <com.dhht.canvas.SingerView
+        android:id="@+id/singerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="2dp"
+        android:visibility="gone" />
+
+    <Button
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保存" />
+
+    <Button
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/btn_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消" />
+
+
+</android.support.constraint.ConstraintLayout>
